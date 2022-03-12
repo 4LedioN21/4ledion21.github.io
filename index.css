@@ -85,7 +85,6 @@ nav{
 .background-image {
  	background-image: url('rugova5.jpeg');
  	background-size: cover;
- 	background-attachment: fixed;
  	background-position: center center;
  	background-repeat: no-repeat;
  	height: 100vh;
