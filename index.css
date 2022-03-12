@@ -1,0 +1,777 @@
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: #f5f5f5;
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #48C9B0;
+	height: 70px;
+}
+
+.logo {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-family: 'Source Serif Pro', serif;
+	font-size: 20px;
+	color: white;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	max-width: 45%;
+}
+
+.nav-links li {
+	list-style-type: none;
+	position: relative;
+}
+
+.nav-links li .subnav {
+	background: #A3E4D7;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 10;
+    display: none;
+}
+.subnav {
+	border-radius: 10px;
+}
+.subnav a {
+	color: white;
+	text-decoration: none;
+}
+
+.subnav a:hover {
+	color: white;
+	background-color: #48C9B0;
+}
+
+.a {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 35px 25px;
+}
+
+
+.a:hover {
+	background-color: #A3E4D7;
+	color: 	#48C9B0;
+}
+
+.burger-menu {
+	display: none;
+}
+
+.burger-menu div {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px;
+}
+
+.background-image {
+ 	background-image: url('rugova5.jpeg');
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	height: 100vh;
+ 	display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .background-image-kosovo {
+ 	background-image: url('gjeravica.jpeg');
+ }
+
+ .background-image-destinations {
+ 	background-image: url('liqenati3.jpeg');
+ }
+
+ .background-image-prishtina {
+ 	background-image: url('pr-city3.jpeg');
+ }
+
+ .background-image-prizren {
+ 	background-image: url('prizren6.jpeg');
+ }
+
+.backdrop {
+	position: absolute;
+	max-width: 100%;
+	height: 100%;
+	top: 70px;
+	left: 0;
+	background-color: rgba(0,0,0,4);
+	opacity: 0.2;
+	z-index: 4;
+}
+
+ .ht2 {
+ 	color: white;
+ 	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-family: 'League Gothic', sans-serif;
+	font-size: 60px;
+	text-align: center;
+	max-width: 700px;
+	z-index: 5;
+	border-bottom: 5px solid white;
+ }
+
+ .ht3 {
+ 	position: relative;
+ 	color: white;
+ 	text-transform: uppercase;
+ 	letter-spacing: 5px;
+ 	font-family: 'League Gothic', sans-serif;
+ 	text-align: center;
+	z-index: 5;
+
+ }
+
+/*body*/
+
+ .liqenati-dsc {
+ 	margin-top: 50px;
+ 	max-width: 100%;
+ }
+
+ .heading-title {
+	text-align: center;
+	font-size: 55px;
+	color: #48C9B0;
+	font-family: 'Syne Mono', monospace;
+	letter-spacing: 5px;
+	border: 5px solid #48C9B0;
+	margin: auto;
+	margin-top: 50px;
+	max-width: 400px;
+	text-transform: uppercase;
+	box-shadow: 5px;
+	box-shadow: 7px 7px ;
+}
+
+.heading-title-kosovo {
+	color: #34495E;
+	border: 5px solid #34495E;
+}
+
+.heading-title-liqenati {
+	color: #48C9B0;
+	border: 5px solid #48C9B0;
+}
+
+.heading-title-kusari {
+	color: #FFD700;
+	border: 5px solid #FFD700;
+}
+
+.heading-title-mirusha {
+	color: #A569BD;
+	border: 5px solid #A569BD;
+}
+
+.imag-ks {
+	max-width: 650px;
+	height: 450px;
+	margin-top: 70px;
+	border-radius: 30px;
+ 	box-shadow: 0.5px 0.5px 10px 5px rgba(0, 0, 0, 2);
+}
+
+.section-2 {
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+}
+
+.pg-ks {
+	text-align: center;
+	font-size: 22px;
+	border-left: 5px solid #34495E;
+	max-width: 650px;
+	margin-top: 90px;
+	margin-left: 10px;
+	font-family: 'Syne Mono', monospace;
+}
+
+.pg-ks-liqenati {
+	border-left: 5px solid #48C9B0;
+}
+
+.pg-ks-kusari {
+	border-left: 5px solid #FFD700;
+}
+
+.pg-ks-mirusha {
+	border-left: 5px solid #A569BD;
+}
+
+.img2-rg {
+	max-width: 600px;
+	height: 400px;
+	position: relative;
+	top: 50px;
+	left: 250px;
+	z-index: 7;
+	border-radius: 30px;
+	box-shadow: 0.5px 0.5px 10px 5px rgba(0, 0, 0, 2);
+}
+
+.img3-rg {
+	max-width: 600px;
+	height: 400px;
+	position: relative;
+	top: 200px;
+	left: 50px;
+	z-index: 8;
+	border-radius: 30px;
+	box-shadow: 0.5px 0.5px 10px 5px rgba(0, 0, 0, 2);
+}
+
+.b1-ks {
+	margin-left: 600px;
+	margin-top: 30px;
+	width: 250px;
+	height: 70px;
+	background-color: transparent;
+	border-radius: 40px;
+	font-family: 'Syne Mono', monospace;
+}
+
+.b1-ks-1 {
+	border-color: #34495E;
+	color: #34495E;
+}
+
+.b1-ks-1:hover {
+	background-color: #34495E;
+	color: white;
+	border: none;
+}
+
+.b1-ks-liqenati {
+	border-color: #48C9B0;
+	color: #48C9B0;
+}
+
+.b1-ks-liqenati:hover {
+	background-color: #48C9B0;
+	color: white;
+	border: none;
+}
+
+.b1-ks-kusari {
+	border-color: #FFD700;
+	color: #FFD700;
+}
+
+.b1-ks-kusari:hover {
+	background-color: #FFD700;
+	color: white;
+	border: none;
+}
+
+.b1-ks-mirusha {
+	border-color: #A569BD;
+	color: #A569BD;
+}
+
+.b1-ks-mirusha:hover {
+	background-color: #A569BD;
+	color: white;
+	border: none;
+}
+
+.mirusha-dsc {
+ 	max-width: 100%;
+ }
+
+.cities-ks {
+	margin-top: 50px;
+	max-width: 100%
+}
+
+.carousel2 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	max-width: 700px;
+	height: 500px;
+	border-radius: 30px;
+}
+
+.ht9 {
+	text-align: center;
+	color: #34495E;
+	font-family: 'Syne Mono', monospace;
+	letter-spacing: 5px;
+	border: 5px solid #34495E;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	max-width: 1000px;
+	text-transform: uppercase;
+	box-shadow: 5px;
+	box-shadow: 7px 7px ;
+}
+
+.ht10 {
+	text-align: center;
+	color: #48C9B0;
+	font-family: 'Syne Mono', monospace;
+	letter-spacing: 5px;
+	border: 5px solid  #48C9B0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	max-width: 800px;
+	text-transform: uppercase;
+	box-shadow: 5px;
+	box-shadow: 7px 7px ;
+	font-size: 70px;
+}
+
+footer {
+	background-color: #48C9B0;
+	height: auto;
+	width: 100%;
+	font-family: 'Syne Mono', monospace;
+	padding-top: 40px;
+	color: white;
+	margin-top: 50px;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h3 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+
+.footer-content p {
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.socials {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+	margin: 0 10px;
+}
+
+.socials a {
+	text-decoration: none;
+	color: white;
+}
+
+.socials a i {
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+
+.socials a:hover {
+	color: aqua;
+}
+
+.footer-bottom {
+	background: #1ABC9C;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer-bottom p {
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer-bottom span {
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+/*aboutkosovo*/
+
+.nav-links li .subnav2 {
+	background: #E5E8E8;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 10;
+    display: none;
+}
+.subnav2 a {
+	color: #34495E;
+	text-decoration: none;
+}
+
+.subnav2 a:hover {
+	color: #E5E8E8;
+	background-color: #34495E;
+}
+
+
+.a2:hover {
+ background-color: #E5E8E8;
+ color: #34495E;
+}
+
+.clr-white {
+	color: white;
+}
+
+.section-imgXtxt {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.vid1 {
+	max-width: 600px;
+	height: 450px;
+	margin-top: 50px;
+	margin-left: 50px;
+	box-shadow: 0.5px 0.5px 20px 5px #34495E;
+	border-radius: 30px;
+}
+
+.kosovo-history {
+	text-align: center;
+	font-size: 24px;
+	border-right: 5px solid #34495E;
+	margin-top: 40px;
+
+	max-width: 700px;
+	font-family: 'Syne Mono', monospace;
+}
+
+.kosovo-history2 {
+	text-align: center;
+	font-size: 24px;
+	border-top: 5px solid #34495E;
+	max-width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	font-family: 'Syne Mono', monospace;
+}
+
+.kosovo-history3 {
+	text-align: center;
+	font-size: 22px;
+	max-width: 97%;
+	margin-left: 30px;
+	font-family: 'Syne Mono', monospace;
+	margin-top: 50px;
+}
+
+.p-geo {
+	max-width: 850px;
+	font-size: 24px;
+	border: none;
+	margin-left: 10px;
+}
+
+
+.table-space {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.img-5 {
+	justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 21;
+}
+
+.section-img {
+	max-width: 450px;
+	height: 350px;
+	border-radius: 30px;
+	box-shadow: 0.5px 0.5px 10px 5px #34495E;
+	z-index: 21;
+}
+
+
+.img-culture {
+	box-shadow: 0.5px 0.5px 30px 5px #34495E;
+	border-radius: 30px;
+	max-width: 600px;
+	height: 450px;
+	z-index: 7;
+}
+
+.img-culture2 {
+	max-width: 750px;
+	height: 450px;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	box-shadow: 0.5px 0.5px 30px 5px #34495E;
+	border-radius: 30px;
+}
+
+.ks-food {
+	max-width: 600px;
+	height: 400px;
+	box-shadow: 0.5px 0.5px 30px 5px #A569BD;
+	border-radius: 30px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+/*prishtina.html*/
+
+.a3:hover {
+	color: #FFD700;
+	background-color: #FCF3CF;
+}
+
+
+.pr-img{
+ 	box-shadow: 0.5px 0.5px 20px 1px #FFD700;
+}
+
+
+.nav-links li .subnav3 {
+	background: #FCF3CF;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 10;
+    display: none;
+}
+.subnav3 a {
+	color: #FFD700;
+	text-decoration: none;
+}
+
+.subnav3 a:hover {
+	color: #FCF3CF;
+	background-color: #FFD700;
+}
+.pr-txt {
+	text-align: center;
+	font-size: 23px;
+	border-right: : 5px solid #FFD700;
+	margin-top: 60px;
+	margin-left: 30px;
+	max-width: 650px;
+	font-family: 'Syne Mono', monospace;
+}
+
+.pr-img2 {
+	max-width: 700px;
+	height: 500px;
+	margin-left: 30px;
+	border-radius: 30px;
+	box-shadow: 0.5px 0.5px 20px 1px #FFD700;
+}
+.visit-pr {
+	max-width: 100%
+}
+.h-pr {
+	font-family: 'Syne Mono', monospace;
+	margin-top: 50px;
+	text-align: center;
+}
+.pg-pr {
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Syne Mono', monospace;
+}
+
+/*destinations.html*/
+
+
+.box-shadow-liqenati {
+	box-shadow: 0.5px 0.5px 15px 2px #48C9B0;
+}
+
+hr {
+	max-width: 100%;
+ 	margin-bottom: 50px !important;
+	margin-top: 50px;
+	height: 5px !important;
+	background-color: #34495E;
+}
+
+@media screen and (max-width: 1205px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.section-imgXtxt {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.imag-ks {
+		max-width: 600px;
+		height: auto;
+		border-radius: 30px;
+	}
+
+	.b1-ks {
+		display: block;
+		margin:auto;
+		margin-top: 50px;
+		width: 250px;
+		height: 70px;
+		background-color: transparent;
+		border-radius: 40px;
+		font-family: 'Syne Mono', monospace;
+	}
+
+	.button-a {
+		text-decoration: none;
+		color: #34495E;
+	}
+
+	.imgs-responsive {
+		display: flex;
+		flex-direction: column;
+    	align-items: center;
+	}
+
+	.img2-rg {
+		width: 100%;
+		height: auto;
+		top: 70px;
+		left: 0;
+	}
+
+	.img3-rg {
+		width: 100%;
+		height: auto;
+		top: 170px;
+		left: 0;
+	}
+
+
+	.carousel2 {
+		width: 100%;
+		height: auto;
+	}
+
+	.kosovo-history {
+	border-right: none;
+	}
+
+	.img-culture {
+		width: 100%;
+		height: auto;
+		margin-top: 40px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: #48C9B0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: .2s ease;
+		z-index: 10;
+	}
+
+	.nav-links.open {
+		transform: translateX(0%);
+	}
+
+	.burger-menu {
+		display: block;
+	}
+
+	.section-imgXtxt {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.imag-ks {
+		width: 100%;
+		height: auto;
+	}
+
+	.img2-rg {
+		width: 100%;
+		height: auto;
+		top: 70px;
+		left: 0;
+	}
+
+	.img3-rg {
+		width: 100%;
+		height: auto;
+		top: 170px;
+		left: 0;
+	}
+
+	.h1-delete {
+		display: none;
+	}
+
+	.p-delete {
+		display: none;
+	}
+
+	.table-space {
+	    flex-direction: column;
+	   	align-items: center;
+	}
+
+	.table1 {
+		margin-left: 55px;
+	}
+	.section-img {
+		margin-top: 50px;
+	}
+
+}
